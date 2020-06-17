@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive;
+}
+.brand{
+background-color: #1a212b;
+display: flex;
+justify-content:space-between;
+margin: 0 200px;
+}
+.site-title{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+}
+.trongnuoc,
+.nuocngoai,
+.sukien,
+.anuong,
+.ktcb{
+    height: 89.6px;
+    padding: 32px 15px;
+    border: 1px solid rgba(255,255,255,.1);
+}
+.login{
+    margin-top: 40px;
+    margin-left: 650px;
+    position: absolute;
+}
+.img{
+    width: 100%;
+    height: 200px;
+    background-size:cover ;
+    background-position: center;
+    position: relative;
+}
