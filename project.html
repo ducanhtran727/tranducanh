@@ -1,390 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="project.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="project.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="site-container">
-        <header class="brand">
+      
+      <header class="brand">
+        <div>
+          <a href="./project.html" class="site-title">
+            <span class="material-icons" style="font-size: 40px;">
+              add_location_alt
+            </span>
             <div>
-                <a href="#" class="site-title">
-                    <span class="material-icons" style="font-size: 40px;">
-                        add_location_alt
-                    </span>
-                    <div>
-                        <h1 class="title">C4E77<br>Review du lich</h1>
-                    </div>
-
-                </a>
-                
+              <h1 class="title">C4E77<br />Review du lịch</h1>
             </div>
-            <div class="menu-main">
-                <nav>
-                    <ul class="menu" style="list-style: none;">
-                        <li class="trongnuoc">
-                            <div>
-                                <a href="#" style="text-decoration: none; color:#fff ;">Trong Nước</a>
-                                <div class="dropdown">
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch sapa</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Hạ long</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Tam đảo</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Sầm Sơn</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Đà Nẵng</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Nha Trang</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Mũi Né</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Hà Nội</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Đà Lạt</a>
-                                    <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Sài Gòn</a>
-                                </div>
-
-                            </div>
-                        </li>
-                        <li class="nuocngoai">
-                            <a href="#" style="text-decoration: none; color: #fff;">Nước Ngoài</a>
-                            <div class="dropdown">
-                                <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Thái Lan</a>
-                                <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Singapore</a>
-                                <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Malaysia</a>
-                                <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Nhật Bản</a>
-                                <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Campuchia</a>
-                                <a href="#" style="text-decoration: none; color:black ;">Kinh Nghiệm Du lịch Hàn Quốc</a>
-                            </div>
-
-                        </li>
-                        <li class="sukien"><a href="#" style="text-decoration: none; color: #fff;">Sự Kiện</a></li>
-                        <li class="anuong"><a href="#" style="text-decoration: none; color: #fff;">Ăn Uống</a></li>
-                        <li class="ktcb"><a href="#" style="text-decoration: none; color: #fff;">Kiến Thức Cơ Bản</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="img" style="background-image: url(https://kenh14cdn.com/thumb_w/640/2020/photo1579141140193-1579141140321-crop-1579141230702264001381.jpg);">
-            <div class="timkiem">
-                <button style="width: 100px; height: 50px; background-color: red;" value="" onclick="myFunction()">
-                    Tìm Kiếm
-                </button>
-                <input type="text" placeholder="   Nhập địa điểm để tìm kiếm" id="input" value="" onkeyup="myFunction1()" style="width: 400px; height: 50px;">
-                <ul id="list-timkiem">
-                    <li><a href="#">Sapa</a></li>
-                    <li><a href="https://www.ivivu.com/blog/2013/09/du-lich-ha-long-cam-nang-tu-a-den-z/">Ha Long</a></li>
-                    <li><a href="#">Tam đao</a></li>
-                    <li><a href="#">Sam Son</a></li>
-                    <li><a href="#">Đa Nang</a></li>
-                    <li><a href="#">Nha Trang</a></li>
-                    <li><a href="#">Mui Ne</a></li>
-                    <li><a href="#">Đa Lat</a></li>
-                    <li><a href="#">Ha Noi</a></li>
-                    <li><a href="#">Sai Gon</a></li>
-                    <li><a href="#">Thai Lan</a></li>
-                    <li><a href="#">Singapore</a></li>
-                    <li><a href="#">Malaysia</a></li>
-                    <li><a href="#">Nhat Ban</a></li>
-                    <li><a href="#">Ha Giang</a></li>
-                    <li><a href="#">Cua Lo</a></li>
-                    <li><a href="#">Hue</a></li>
-                    <li><a href="#">Trung Quoc</a></li>
-                    <li><a href="#">Campuchia</a></li>
-                   
-                </ul>
-            </div>
+          </a>
         </div>
-        <div class="d-max1">
-            <div class="d1" style="background-image: linear-gradient(to bottom right,#7ec1ae,#c7ae80);" >
-               <h1 class="tieude1" style="color: #fff;">Những Địa Du lịch Trong Nước Hấp Dẫn nhất</h1>
-            </div>
-            <div class="d2">
-                <div class="content1">
-                    <div class="img1">
-                      <img src="https://vcdn-vnexpress.vnecdn.net/2020/03/14/ao-dai-7726-1584185547-1584193-7767-2375-1584193471.jpg" alt="">
-                    </div>
-                    <div class="link1">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Nghiệm Du Lịch Huế </a>
-                    </div>
+        <div class="menu-main">
+          <nav>
+            <ul class="menu" style="list-style: none;">
+              <button class="button">
+                <div>
+                  <a href="#"
+                    >Trong Nước</a
+                  >
+                  <div class="dropdown">
+                    <a href="./sapa.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch sapa</a
+                    >
+                    <a href="./halong.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Hạ long</a
+                    >
+                    <a href="./tamdao.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Tam đảo</a
+                    >
+                    <a href="./thailan.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Sầm Sơn</a
+                    >
+                    <a href="./danang.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Đà Nẵng</a
+                    >
+                    <a href="./nhatrang.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Nha Trang</a
+                    >
+                    <a href="./tamdao.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Mũi Né</a
+                    >
+                    <a href="./hanoi.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Hà Nội</a
+                    >
+                    <a href="./dalat.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Đà Lạt</a
+                    >
+                    <a href="./saigon.html" style="text-decoration: none; color: black;"
+                      >Kinh Nghiệm Du lịch Sài Gòn</a
+                    >
+                  </div>
                 </div>
-                <div class="content2">
-                    <div class="img2">
-                        <img src="https://saigonstartravel.com/wp-content/uploads/2019/03/tour-nha-trang-tet-2020-11103.jpg" alt="">
-
-                    </div>
-                    <div class="link2">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Nghiệm Du lịch Nha trang</a>
-                    </div>
-
+              </button>
+              <button class="button">
+                <a href="#"
+                  >Nước Ngoài</a
+                >
+                <div class="dropdown">
+                  <a href="./thailan.html" style="text-decoration: none; color: black;"
+                    >Kinh Nghiệm Du lịch Thái Lan</a
+                  >
+                  <a href="./singapore.html" style="text-decoration: none; color: black;"
+                    >Kinh Nghiệm Du lịch Singapore</a
+                  >
+                  <a href="./paris.html" style="text-decoration: none; color: black;"
+                    >Kinh Nghiệm Du lịch Paris</a
+                  >
+                  <a href="./nhatban.html" style="text-decoration: none; color: black;"
+                    >Kinh Nghiệm Du lịch Nhật Bản</a
+                  >
+                  <a href="./london.html" style="text-decoration: none; color: black;"
+                    >Kinh Nghiệm Du lịch London</a
+                  >
+                  <a href="./hanquoc.html" style="text-decoration: none; color: black;"
+                    >Kinh Nghiệm Du lịch Hàn Quốc</a
+                  >
                 </div>
-                <div class="content3">
-                    <div class="img3">
-                        <img src="https://www.citypassguide.com/media/slideshow/shutterstock_362736344_alternative-things-to-do-in-saigon.jpg.1758x854_q85_crop.jpg" alt="">
-
-                    </div>
-                    <div class="link3">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Ngiệm Du lich Sài Gòn</a>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="d3">
-                <div class="content4">
-                    <div class="img4">
-                        <img src="https://luhanhvietnam.com.vn/tour-du-lich/vnt_upload/tour/01_2019/thumbs/780_crop_cong-troi-sapa.jpg" alt="">
-
-                    </div>
-                    <div class="link4">
-                        <a href="" style="text-decoration: none; font-size: 25px;">KInh Nghiệm du lich sapA</a>
-
-                    </div>
-
-                </div>
-                <div class="content5">
-                    <div class="img5">
-                        <img src="https://image.plo.vn/w800/Uploaded/2020/mrnvyqdxl/2020_03_16/sun-group-ky-vong-da-nang-top-dau-1_tboc.jpg" alt="">
-
-                    </div>
-                    <div class="link5">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Nghiệm Du lịch Đà Nẵng</a>
-
-                    </div>
-                
-                </div>
-                <div class="content6">
-                    <div class="img6">
-                        <img src="https://tour.dulichvietnam.com.vn/uploads/tour/1554722331_du-lich-da%20-lat-ngam-hoa-3.jpg"
-                            alt="">
-                    
-                    </div>
-                    <div class="link6">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Nghiệm Du lịch Đà Lạt</a>
-                    
-                    </div>
-                
-                </div>
-
-            </div>
-
+              </button>
+              <button class="button">
+                <a href="#"
+                  >Sự Kiện</a
+                >
+              </button>
+              <button class="button">
+                <a href="#"
+                  >Ăn Uống</a
+                >
+              </button>
+              <button class="button">
+                <a href="#"
+                  >Kiến Thức Cơ Bản</a
+                >
+              </button>
+            </ul>
+          </nav>
         </div>
-        <div class="d-max2">
-            <div class="d1" style="background-image: linear-gradient(to bottom right,#7ec1ae,#c7ae80);">
-                <h1 class="tieude1" style="color: #fff;">Những Địa Du lịch Nước ngoài Hấp Dẫn nhất</h1>
-            </div>
-            <div class="d2">
-                <div class="content1">
-                    <div class="img1">
-                        <img src="https://dulichviet.com.vn/images/bandidau/images/CH%C3%82U%20%C3%81/Han%20Quoc/du-lich-han-quoc-cam-nhan-mac-do-hanbok-du-lich-viet.jpg"
-                            alt="">
-                    </div>
-                    <div class="link1">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Nghiệm Du Lịch Hàn Quốc </a>
-                    </div>
-                </div>
-                <div class="content2">
-                    <div class="img2">
-                        <img src="https://toptravels.vn/wp-content/uploads/2018/07/du-lich-thai-lan-kham-pha-bangkok-2-ngay-1-dem.jpg" alt="">
-            
-                    </div>
-                    <div class="link2">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Nghiệm Du lịch Thái Lan</a>
-                    </div>
-            
-                </div>
-                <div class="content3">
-                    <div class="img3">
-                        <img src="https://tour.dulichvietnam.com.vn/uploads/tour/1575521281_du-lich-nhat-ban.jpg"
-                            alt="">
-            
-                    </div>
-                    <div class="link3">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Ngiệm Du lich Nhật Bản</a>
-                    </div>
-            
-                </div>
-            
-            </div>
-            <div class="d3">
-                <div class="content4">
-                    <div class="img4">
-                        <img src="https://deviet.vn/wp-content/uploads/2018/07/3-ngay-o-paris.jpg"
-                            alt="">
-            
-                    </div>
-                    <div class="link4">
-                        <a href="" style="text-decoration: none; font-size: 25px;">KInh Nghiệm du lich Paris</a>
-            
-                    </div>
-            
-                </div>
-                <div class="content5">
-                    <div class="img5">
-                        <img src="https://travelchauau.com/wp-content/uploads/2019/03/s6.jpg"
-                            alt="">
-            
-                    </div>
-                    <div class="link5">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Kinh Nghiệm Du lịch London</a>
-            
-                    </div>
-            
-                </div>
-                <div class="content6">
-                    <div class="img6">
-                        <img src="https://dulichvietnam.com.vn/du-lich-anh/wp-content/uploads/2020/04/dia-diem-du-lich-londonlbia.jpg"
-                            alt="">
-            
-                    </div>
-                    <div class="link6">
-                        <a href="#" style="text-decoration: none; font-size: 25px;">Những Bức Ảnh tuyệt đẹp được chụp lại tại Châu Âu</a>
-            
-                    </div>
-            
-                </div>
-            
-            </div>
 
+      </header>
+      <div
+        class="img"
+        style="
+          background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190220/ourmid/pngtree-travel-blue-background-literary-beautiful-image_7372.jpg);
+        "
+      >
+        <div class="timkiem">
+          <button
+            style="width: 100px; height: 50px; background-color: red;"
+            value=""
+            onclick="myFunction()"
+          >
+            Tìm Kiếm
+          </button>
+          <input
+            type="text"
+            placeholder="   Nhập địa điểm để tìm kiếm"
+            id="input"
+            value=""
+            onkeyup="myFunction1()"
+            style="width: 400px; height: 50px;"
+          />
+          <ul id="list-timkiem">
+            <li><a href="./sapa.html">Sapa</a></li>
+            <li>
+              <a
+                href="./halong.html"
+                >Hạ Long</a
+              >
+            </li>
+            <li><a href="./tamdao.html">Tam đảo</a></li>
+            <li><a href="./thailan.html">Sầm Sơn</a></li>
+            <li><a href="./danang.html">Đà Nẵng</a></li>
+            <li><a href="./nhatrang.html">Nha Trang</a></li>
+            <li><a href="./nhatrang.html">Mũi Né</a></li>
+            <li><a href="./dalat.html">Đà Lạt</a></li>
+            <li><a href="./hanoi.html">Hà Nội</a></li>
+            <li><a href="./saigon.html">Sài Gòn</a></li>
+            <li><a href="./thailan.html">Thái Lan</a></li>
+            <li><a href="./singapore.html">Singapore</a></li>
+            <li><a href="./london.html">Malaysia</a></li>
+            <li><a href="./nhatban.html">Nhật Bản</a></li>
+            <li><a href="./tamdao.html">Hà Giang</a></li>
+            <li><a href="./nhatrang.html">Cửa Lò</a></li>
+            <li><a href="./tamdao.html">Huế</a></li>
+            <li><a href="./thailan.html">Trung Quốc</a></li>
+            <li><a href="./thailan.html">Campuchia</a></li>
+            <li><a href="./london.html">London</a></li>
+            <li><a href="./paris.html">Paris</a></li>
+          </ul>
         </div>
         
-        <div class="d-maxx">
-            <div class="d-max3">
-                <div class="d1" style="background-image: linear-gradient(to bottom right,#7ec1ae,#c7ae80);">
-                    <h1 class="tieude1" style="color: #fff;">Lễ Hội Và Những Sự Kiện Du lịch</h1>
-                </div>
-                <div class="s-content1">
-                    <div class="small-img1">
-                        <img src="https://anh.quatructuyen.com/media/wysiwyg/trang-tri/giang-sinh/mo-hinh-ong-gia-noel-go_4_.jpg"
-                            alt="">
-            
-                    </div>
-                    <div class="linksukien1">
-                        <a href="#" style="text-decoration: none;font-size: 25px;">Địa điểm vui chơi Noel đẹp và miễn phí tại Hà Nội
-                            năm 2020</a><br>
-                        <p style="font-size: 20px;">Dịp Noel ở Hà Nội thời tiết se lạnh, không khí tươi vui vì vậy đây là dịp các
-                            bạn trẻ nô nức cùng nhau vui chơi để chuẩn
-                            bị đón chào một năm mới an lành. Mùa Noel Giáng sinh đang đến rất gần</p>
-                    </div>
-            
-                </div>
-                <div class="s-content1">
-                    <div class="small-img1">
-                        <img src="https://vcdn-vnexpress.vnecdn.net/2019/02/12/hoi-lim-3-3968-1549965205.jpg" alt="">
-                    </div>
-                    <div class="linksukien1">
-                        <a href="#" style="text-decoration: none;font-size: 25px;">Kinh nghiệm đi hội Lim Bắc Ninh 2020 vui ‘quên
-                            đường về’</a><br>
-                        <p style="font-size: 20px;">Đến hẹn lại lên, cứ vào dịp đầu xuân năm mới hội Lim được tổ chức vào ngày 12
-                            tháng giêng Âm lịch thu hút đông đảo du
-                            khách tới trẩy hội du xuân. Với những kinh nghiệm đi hội Lim Bắc Ninh dưới đây sẽ giúp bạn có chuyến đi
-                            vui vẻ và ý
-                            nghĩa bên người thân yêu.</p>
-                    </div>
-            
-                </div>
-                <div class="s-content1">
-                    <div class="small-img1">
-                        <img src="https://dulich9.com/wp-content/uploads/2019/01/du-lich-tet-duong-mien-bac-0.webp" alt="">
-            
-                    </div>
-                    <div class="linksukien1">
-                        <a href="#" style="text-decoration: none;font-size: 25px;">Những điểm du lịch hấp dẫn Tết Dương lịch ở miền
-                            Bắc</a><br>
-                        <p style="font-size: 20px;">Tết Dương lịch thay vì đến những điểm du lịch quen thuộc, đông đúc, chúng tôi sẽ
-                            gợi ý cho các bạn một số điểm du lịch
-                            độc đáo, thú vị, hấp dẫn và lý tưởng nhất cho kỳ nghỉ Tết Dương lịch ở miền Bắc. Hy vọng các bạn sẽ có
-                            một kỳ nghỉ thoải
-                            mái, thư giãn và vui vẻ nhất.</p>
-                    </div>
-            
-                </div>
-                <div class="s-content1">
-                    <div class="small-img1">
-                        <img src="https://dulich9.com/wp-content/uploads/2019/01/tet-duong-lich-0.webp" alt="">
-            
-                    </div>
-                    <div class="linksukien1">
-                        <a href="#" style="text-decoration: none;font-size: 25px;">Những điểm đến trong và ngoài nước dịp Tết Dương
-                            lịch</a><br>
-                        <p style="font-size: 20px;">Mặc dù không được nghỉ nhiều như Tết Âm lịch, nhưng Tết Dương lịch cũng là thời
-                            điểm lý tưởng cho những chuyến đi. Sau
-                            đây, chúng tôi sẽ gợi ý cho các bạn những điểm du lịch Tết tuyệt vời và lý tưởng nhất ở trong và người
-                            nước, hy vọng sẽ
-                            giúp các bạn chọn được một địa điểm phù hợp với sở thích và kinh phí của mình</p>
-                    </div>
-            
-                </div>
-                <div class="s-content1">
-                    <div class="small-img1">
-                        <img src="https://dulich9.com/wp-content/uploads/2019/01/du-lich-tet-0.webp" alt="">
-            
-                    </div>
-                    <div class="linksukien1">
-                        <a href="#" style="text-decoration: none;font-size: 25px;">Đi đâu trong 3 ngày nghỉ Tết Dương lịch 2020 ở
-                            Miền Nam?</a><br>
-                        <p style="font-size: 20px;">Các bạn đã có kế hoạch gì cho kỳ nghỉ Tết Dương lịch sắp tới chưa? Nếu chưa thì
-                            tại sao các bạn lại không đi du lịch
-                            nhỉ? Chúng tôi sẽ giúp các lựa chọn những địa điểm du lịch Tết Dương lịch độc đáo, lý tưởng, hấp dẫn và
-                            tuyệt vời nhất ở
-                            miền Nam. Hy vọng các bạn sẽ có một kỳ nghỉ lễ vui vẻ và đáng nhớ. Đi đâu trong 3 ngày nghỉ Tết Dương
-                            lịch</p>
-                    </div>
-            
-                </div>
-            
-            
-            </div>
-            <div class="side-menu">
-                <div class="d1" style="background-image: linear-gradient(to bottom right,#7ec1ae,#c7ae80);">
-                    <h1 class="tieude1" style="color: #fff;">Lễ Hội Và Những Sự Kiện Du lịch</h1>
-                </div>
-                <div>
-                    <ul style="list-style: none;">
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Danh sách tất cả các điểm du lịch ở Việt Nam</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;" >Kinh nghiệm du lịch Sapa</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Hạ Long</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Tam Đảo</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch biển Sầm Sơn</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Đà Nẵng</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Nha Trang</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Hướng dẫn du lịch Phú Quốc chi tiết</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Mũi Né</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Đà Lạt tiết kiệm</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Hà Nội giá rẻ</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Sài Gòn giá rẻ 2020</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Thái Lan</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Singapore</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Malaysia 2020</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Nhật Bản tự túc: Visa, ăn ở và vui chơi</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Hà Giang</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Tam Đảo 2020</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Cửa Lò</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Huế</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Hội An 2020</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Kinh nghiệm du lịch Trung Quốc</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">Hướng dẫn du lịch Campuchia</a></li>
-                        <li class="list-side-menu"><a href="#" style="text-decoration: none;">[Update] Kinh nghiệm du lịch Hàn Quốc tự túc 2020 trọn vẹn</a></li>
-                    </ul>
-
-                </div>
-                
-
-            </div>
-            
-
+      </div>
+      <div class="d-max1">
+        <div
+          class="d1"
+          style="
+            background-image: linear-gradient(
+              to bottom right,
+              #7ec1ae,
+              #c7ae80
+            );
+          "
+        >
+          <h1 class="tieude1" style="color: #fff;">
+            Những Địa Du lịch Trong Nước Hấp Dẫn nhất
+          </h1>
         </div>
-        <div class="footer">
-            <nav style="background-color: #78b43d; text-align: center;">
-                <a href="#" class="linkfooter">Giới THiệu</a>
-                <a href="#" class="linkfooter">Góp Ý</a>
-                <a href="#" class="linkfooter">Đầu Trang</a>
-            </nav>
-            <h1 style="text-align: center;">C4E77(Review Du lịch)</h1>
-            <p style="font-size: 25px; text-align:center;">Đừng bao giờ ngần ngại đi xa hơn nữa, vượt qua mọi đại dương, mọi biên giới, mọi quốc gia và mọi đức tin.</p>
-
+        <div class="d2">
+          <div class="content1">
+            <div class="img1">
+              <img
+                src="https://i.ytimg.com/vi/GAeBmeYnOIQ/maxresdefault.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./tamdao.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Tam Đảo vui chơi thả ga, không lo về giá
+              </a>
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img2">
+              <img
+                src="https://saigonstartravel.com/wp-content/uploads/2019/03/tour-nha-trang-tet-2020-11103.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./nhatrang.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Nha Trang 2020 vui chơi, ăn hải sản thả ga</a
+              >
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img3">
+              <img
+                src="https://www.citypassguide.com/media/slideshow/shutterstock_362736344_alternative-things-to-do-in-saigon.jpg.1758x854_q85_crop.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./saigon.html" style=" font-size: 25px;"
+                >Kinh nghiệm du lịch Sài Gòn 2020 đi thế nào, ở đâu, ăn chơi gì?</a
+              >
+            </div>
+          </div>
         </div>
+        <div class="d3">
+          <div class="content1">
+            <div class="img4">
+              <img
+                src="https://luhanhvietnam.com.vn/tour-du-lich/vnt_upload/tour/01_2019/thumbs/780_crop_cong-troi-sapa.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./sapa.html" style="font-size: 25px;"
+                >[Update 2020] Kinh nghiệm du lịch Sapa từ dân thổ địa</a
+              >
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img5">
+              <img
+                src="https://image.plo.vn/w800/Uploaded/2020/mrnvyqdxl/2020_03_16/sun-group-ky-vong-da-nang-top-dau-1_tboc.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./danang.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Đà Nẵng tự túc 2020 không thể chi tiết hơn</a
+              >
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img6">
+              <img
+                src="https://tour.dulichvietnam.com.vn/uploads/tour/1554722331_du-lich-da%20-lat-ngam-hoa-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./dalat.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Đà Lạt lần đầu 2020 chi tiết như dân bản địa</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-max2">
+        <div
+          class="d1"
+          style="
+            background-image: linear-gradient(
+              to bottom right,
+              #7ec1ae,
+              #c7ae80
+            );
+          "
+        >
+          <h1 class="tieude1" style="color: #fff;">
+            Những Địa Du lịch Nước ngoài Hấp Dẫn nhất
+          </h1>
+        </div>
+        <div class="d2">
+          <div class="content1">
+            <div class="img1">
+              <img
+                src="https://dulichviet.com.vn/images/bandidau/images/CH%C3%82U%20%C3%81/Han%20Quoc/du-lich-han-quoc-cam-nhan-mac-do-hanbok-du-lich-viet.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./hanquoc.html" style="font-size: 25px;"
+                >[Update] Kinh nghiệm du lịch Hàn Quốc tự túc 2020 trọn vẹn
+              </a>
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img2">
+              <img
+                src="https://toptravels.vn/wp-content/uploads/2018/07/du-lich-thai-lan-kham-pha-bangkok-2-ngay-1-dem.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./thailan.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Thái Lan tự túc: Ăn gì, chơi đâu, lịch trình v.v</a
+              >
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img3">
+              <img
+                src="https://tour.dulichvietnam.com.vn/uploads/tour/1575521281_du-lich-nhat-ban.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./nhatban.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Nhật Bản tự túc: Visa, ăn ở và vui chơi</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="d3">
+          <div class="content1">
+            <div class="img4">
+              <img
+                src="https://deviet.vn/wp-content/uploads/2018/07/3-ngay-o-paris.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./paris.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Paris tự túc</a
+              >
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img5">
+              <img
+                src="https://travelchauau.com/wp-content/uploads/2019/03/s6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./london.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch bụi London – Anh siêu tiết kiệm</a
+              >
+            </div>
+          </div>
+          <div class="content1">
+            <div class="img6">
+              <img
+                src="https://image.viettimes.vn/666x374/Uploaded/2020/ayhthuo/2019_12_04/sing8731632_4122019.jpg"
+                alt=""
+              />
+            </div>
+            <div class="link1">
+              <a href="./singapore.html" style="font-size: 25px;"
+                >Kinh nghiệm du lịch Singapore tự túc 2020 (cập nhật mới nhất)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-
+      <div class="d-maxx">
+        <div class="d-max3">
+          <div
+            class="d1"
+            style="
+              background-image: linear-gradient(
+                to bottom right,
+                #7ec1ae,
+                #c7ae80
+              );
+            "
+          >
+            <h1 class="tieude1" style="color: #fff;">
+              Lễ Hội Và Những Sự Kiện Du lịch
+            </h1>
+          </div>
+          <div class="s-content1">
+            <div class="small-img1">
+              <img
+                src="https://anh.quatructuyen.com/media/wysiwyg/trang-tri/giang-sinh/mo-hinh-ong-gia-noel-go_4_.jpg"
+                alt=""
+              />
+            </div>
+            <div class="linksukien1">
+              <a href="#" 
+                >Địa điểm vui chơi Noel đẹp và miễn phí tại Hà Nội năm 2020</a
+              ><br />
+              <p style="font-size: 20px;">
+                Dịp Noel ở Hà Nội thời tiết se lạnh, không khí tươi vui vì vậy
+                đây là dịp các bạn trẻ nô nức cùng nhau vui chơi để chuẩn bị đón
+                chào một năm mới an lành. Mùa Noel Giáng sinh đang đến rất gần
+              </p>
+            </div>
+          </div>
+          <div class="s-content1">
+            <div class="small-img1">
+              <img
+                src="https://vcdn-vnexpress.vnecdn.net/2019/02/12/hoi-lim-3-3968-1549965205.jpg"
+                alt=""
+              />
+            </div>
+            <div class="linksukien1">
+              <a href="#"
+                >Kinh nghiệm đi hội Lim Bắc Ninh 2020 vui ‘quên đường về’</a
+              ><br />
+              <p style="font-size: 20px;">
+                Đến hẹn lại lên, cứ vào dịp đầu xuân năm mới hội Lim được tổ
+                chức vào ngày 12 tháng giêng Âm lịch thu hút đông đảo du khách
+                tới trẩy hội du xuân. Với những kinh nghiệm đi hội Lim Bắc Ninh
+                dưới đây sẽ giúp bạn có chuyến đi vui vẻ và ý nghĩa bên người
+                thân yêu.
+              </p>
+            </div>
+          </div>
+          <div class="s-content1">
+            <div class="small-img1">
+              <img
+                src="https://dulich9.com/wp-content/uploads/2019/01/du-lich-tet-duong-mien-bac-0.webp"
+                alt=""
+              />
+            </div>
+            <div class="linksukien1">
+              <a href="#"
+                >Những điểm du lịch hấp dẫn Tết Dương lịch ở miền Bắc</a
+              ><br />
+              <p style="font-size: 20px;">
+                Tết Dương lịch thay vì đến những điểm du lịch quen thuộc, đông
+                đúc, chúng tôi sẽ gợi ý cho các bạn một số điểm du lịch độc đáo,
+                thú vị, hấp dẫn và lý tưởng nhất cho kỳ nghỉ Tết Dương lịch ở
+                miền Bắc. Hy vọng các bạn sẽ có một kỳ nghỉ thoải mái, thư giãn
+                và vui vẻ nhất.
+              </p>
+            </div>
+          </div>
+          <div class="s-content1">
+            <div class="small-img1">
+              <img
+                src="https://dulich9.com/wp-content/uploads/2019/01/tet-duong-lich-0.webp"
+                alt=""
+              />
+            </div>
+            <div class="linksukien1">
+              <a href="#" 
+                >Những điểm đến trong và ngoài nước dịp Tết Dương lịch</a
+              ><br />
+              <p style="font-size: 20px;">
+                Mặc dù không được nghỉ nhiều như Tết Âm lịch, nhưng Tết Dương
+                lịch cũng là thời điểm lý tưởng cho những chuyến đi. Sau đây,
+                chúng tôi sẽ gợi ý cho các bạn những điểm du lịch Tết tuyệt vời
+                và lý tưởng nhất ở trong và người nước, hy vọng sẽ giúp các bạn
+                chọn được một địa điểm phù hợp với sở thích và kinh phí của mình
+              </p>
+            </div>
+          </div>
+          <div class="s-content1">
+            <div class="small-img1">
+              <img
+                src="https://dulich9.com/wp-content/uploads/2019/01/du-lich-tet-0.webp"
+                alt=""
+              />
+            </div>
+            <div class="linksukien1">
+              <a href="#"
+                >Đi đâu trong 3 ngày nghỉ Tết Dương lịch 2020 ở Miền Nam?</a
+              ><br />
+              <p style="font-size: 20px;">
+                Các bạn đã có kế hoạch gì cho kỳ nghỉ Tết Dương lịch sắp tới
+                chưa? Nếu chưa thì tại sao các bạn lại không đi du lịch nhỉ?
+                Chúng tôi sẽ giúp các lựa chọn những địa điểm du lịch Tết Dương
+                lịch độc đáo, lý tưởng, hấp dẫn và tuyệt vời nhất ở miền Nam. Hy
+                vọng các bạn sẽ có một kỳ nghỉ lễ vui vẻ và đáng nhớ. Đi đâu
+                trong 3 ngày nghỉ Tết Dương lịch
+              </p>
+            </div>
+          </div>
+          <div class="s-content1">
+            <div class="small-img1">
+              <img
+                src="https://dulich9.com/wp-content/uploads/2019/10/cau-kinh-trung-quoc-1.webp"
+                alt=""
+              />
+            </div>
+            <div class="linksukien1">
+              <a href="#"
+                >“Thiên đường sống ảo” Trương Gia Giới cùng 32 công trình cầu
+                kính ở Trung Quốc bất ngờ đóng cửa</a
+              ><br />
+              <p style="font-size: 20px;">
+                Trung Quốc vốn nổi tiếng với những danh lam thắng cảnh, phong
+                cảnh thiên nhiên hùng vĩ và đa dạng, đặc biệt là những công
+                trình kiến trúc hoành tráng. Trong những năm gần đây, những công
+                trình cầu kính Trung Quốc độc đáo, mới lạ đã góp phần thúc đẩy
+                sự phát triển du lịch của quốc gia này
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="side-menu">
+          <div
+            class="d1"
+            style="
+              background-image: linear-gradient(
+                to bottom right,
+                #7ec1ae,
+                #c7ae80
+              );
+            "
+          >
+            <h1 class="tieude1" style="color: #fff;">
+              Tổng hợp kinh nghiệm du lịch hot nhất
+            </h1>
+          </div>
+          <div>
+            <ul style="list-style: none;">
+              <li class="list-side-menu">
+                <a href="#"
+                  >Danh sách tất cả các điểm du lịch ở Việt Nam</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./sapa.html"
+                  >Kinh nghiệm du lịch Sapa</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./halong.html"
+                  >Kinh nghiệm du lịch Hạ Long</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./tamdao.html" 
+                  >Kinh nghiệm du lịch Tam Đảo</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./saigon.html"
+                  >Kinh nghiệm du lịch biển Sầm Sơn</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./danang.html"
+                  >Kinh nghiệm du lịch Đà Nẵng</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./nhatrang.html"
+                  >Kinh nghiệm du lịch Nha Trang</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./halong.html" 
+                  >Hướng dẫn du lịch Phú Quốc chi tiết</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./halong.html" 
+                  >Kinh nghiệm du lịch Mũi Né</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./dalat.html"
+                  >Kinh nghiệm du lịch Đà Lạt tiết kiệm</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./hanoi.html" 
+                  >Kinh nghiệm du lịch Hà Nội giá rẻ</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./saigon.html" 
+                  >Kinh nghiệm du lịch Sài Gòn giá rẻ 2020</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./thailan.html" 
+                  >Kinh nghiệm du lịch Thái Lan</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./singapore.html"
+                  >Kinh nghiệm du lịch Singapore</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./thailan.html"
+                  >Kinh nghiệm du lịch Malaysia 2020</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./nhatban.html" 
+                  >Kinh nghiệm du lịch Nhật Bản tự túc: Visa, ăn ở và vui
+                  chơi</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./tamdao.html" 
+                  >Kinh nghiệm du lịch Hà Giang</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./tamdao.html" 
+                  >Kinh nghiệm du lịch Tam Đảo 2020</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./nhatrang.html"
+                  >Kinh nghiệm du lịch Cửa Lò</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./nhatrang.html"
+                  >Kinh nghiệm du lịch Huế</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./hoian.html" 
+                  >Kinh nghiệm du lịch Hội An 2020</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./nhatban.html" "
+                  >Kinh nghiệm du lịch Trung Quốc</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="thailan.html"
+                  >Hướng dẫn du lịch Campuchia</a
+                >
+              </li>
+              <li class="list-side-menu">
+                <a href="./hanquoc.html"
+                  >[Update] Kinh nghiệm du lịch Hàn Quốc tự túc 2020 trọn vẹn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <nav style="background-color: #78b43d; text-align: center;">
+          <a href="#" class="linkfooter">Giới THiệu</a>
+          <a href="#" class="linkfooter">Góp Ý</a>
+          <a href="#" class="linkfooter">Đầu Trang</a>
+        </nav>
+        <h1 style="text-align: center;">C4E77(Review Du lịch)</h1>
+        <p style="font-size: 25px; text-align: center;">
+          Đừng bao giờ ngần ngại đi xa hơn nữa, vượt qua mọi đại dương, mọi biên
+          giới, mọi quốc gia và mọi đức tin.
+        </p>
+      </div>
     </div>
-<script src="./project.js"></script>
-</body>
+    <script src="./project.js"></script>
+  </body>
 </html>
