@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.brand{
+background-color: #1a212b;
+display: flex;
+justify-content:space-between;
+margin: 0 200px;
+}
+.site-title{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+}
+
+
+.button{
+    /* height: 89.6px; */
+    padding: 32px 15px;
+    border: 1px solid rgba(255,255,255,.1);
+    background-color:#1a212b ;    
+}
+.button:hover{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* .menu-main button :hover{
+    background-color: white;
+} */
+.button:hover a{
+    color: black;
+}
+
+
+
+
+.timkiem{
+    margin-top: 60px;
+    margin-left: 550px;
+    position: absolute;
+}
+
+.img{
+    width: 100%;
+    height: 200px;
+    background-size:cover ;
+    background: position 100px;;
+    position: relative;
+    z-index: 1;
+}
+
+.button_hover:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2); 
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+cursor: pointer; 
+}
+.d-max1{
+    background-color: rgba(153, 140, 140, 0.212);
+    margin: 0 100px;
+    
+    
+}
+.d1{
+    border-left: 10px solid red;
+    text-align: center;
+   
+    
+}
+
+.content1{
+    background-color: rgb(224, 226, 196);
+    position: relative;
+    width: 400px;
+    height: 300px;
+    
+}
+.img1{
+    width: 350px;
+    height: 170px;
+    position: absolute;
+    margin: 0 25px;
+
+}
+.img1 img{
+    width: 100%;
+    height: 100%;
+}
+.link1{
+    position: absolute;
+    bottom: 40px;
+}
+.link1 a{
+    text-decoration: none;
+    color: #182dec;
+}
+.link1 a:hover{
+    text-decoration: underline;
+    color: orange;
+
+}
+.content2{
+    background-color: rgb(224, 226, 196);
+    position: relative;
+    width: 400px;
+    height: 300px;
+    
+}
+.img2{
+    width: 350px;
+    height: 170px;
+    position: absolute;
+    margin: 0 25px;
+
+}
+.img2 img{
+    width: 100%;
+    height: 100%;
+}
+.link2{
+    position: absolute;
+    bottom: 40px;
+}
+
+.content3{
+    background-color: rgb(224, 226, 196);
+    position: relative;
+    width: 400px;
+    height: 300px;
+    
+}
+.img3{
+    width: 350px;
+    height: 170px;
+    position: absolute;
+    margin: 0 25px;
+
+}
+.img3 img{
+    width: 100%;
+    height: 100%;
+}
+.link3{
+    position: absolute;
+    bottom: 40px;
+    
+}
+.d2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+
+  
+}
+.content4{
+    background-color: rgb(224, 226, 196);
+    position: relative;
+    width: 400px;
+    height: 300px;
+    
+}
+.img4{
+    width: 350px;
+    height: 170px;
+    position: absolute;
+    margin: 0 25px;
+
+}
+.img4 img{
+    width: 100%;
+    height: 100%;
+}
+.link4{
+    position: absolute;
+    bottom: 40px;
+    
+}
+.content5{
+    background-color:rgb(224, 226, 196);
+    position: relative;
+    width: 400px;
+    height: 300px;
+    
+}
+.img5{
+    width: 350px;
+    height: 170px;
+    position: absolute;
+    margin: 0 25px;
+
+}
+.img5 img{
+    width: 100%;
+    height: 100%;
+}
+.link5{
+    position: absolute;
+    bottom: 40px;
+    
+}
+.content6{
+    background-color: rgb(224, 226, 196);
+    position: relative;
+    width: 400px;
+    height: 300px;
+    
+}
+.img6{
+    width: 350px;
+    height: 170px;
+    position: absolute;
+    margin: 0 25px;
+
+}
+.img6 img{
+    width: 100%;
+    height: 100%;
+}
+.link6{
+    position: absolute;
+    bottom: 40px;
+    
+}
+.d3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.d-max2{
+    background-color: rgba(153, 140, 140, 0.212);
+    margin: 0 100px;
+    margin-top: 50px;
+}
+.d-max3{
+    background-color: rgba(153, 140, 140, 0.212);
+    margin: 0 100px;
+    margin-left: 5px;
+    margin-top: 50px;
+   
+}
+.s-content1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+   
+}
+.small-img1{
+    /* width: 300px;
+    height: 100px; */
+    margin-right: 30px;
+    
+}
+.small-img1 img{
+    width: 300px;
+    height: 180.8px;
+
+   
+}
+.side-menu{
+    background-color: rgba(153, 140, 140, 0.212);
+    margin: 0 100px;
+    margin-top: 50px;
+    width: 100%;
+}
+.list-side-menu{
+    height: 60px;
+    border-bottom: 1px solid rgba(17, 9, 9, 0.068);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+.list-side-menu a{
+    text-decoration: none;
+    color: black;
+}
+.list-side-menu a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+.d-maxx{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer{
+    background-color:rgba(17, 9, 9, 0.068); ;
+    height: 150px;
+    margin-top: 100px;
+}
+.linkfooter{
+    
+    padding-left: 10px;
+}
+#list-timkiem{
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+ 
+}
+#list-timkiem li a{
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  
+  
+
+  
+}
+#list-timkiem li{
+    list-style: none;
+    
+}
+.button{
+    position: relative;
+  /* display: inline-block; */
+  
+
+}
+.dropdown{
+margin-top: 34px;
+left: -2px;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+width: 200px;
+height: 89.6px;
+border: 1px solid rgba(255,255,255,.1);
+z-index: 2;
+}
+.button:hover .dropdown{
+    display: block;
+}
+.dropdown a{
+    color: black;
+    padding: 15px 10px ;
+    text-decoration: none;
+    display: block;
+    background-color:#f9f9f9 ;
+    border-bottom: 1px solid rgba(153, 140, 140, 0.212);
+}
+.button{
+     position: relative;
+  display: inline-block;
+}
+.button:hover .dropdown{
+    display: block;
+}
+.linksukien1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.linksukien1 a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+body{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190625/ourmid/pngtree-sea-coconut-background-picture-image_255132.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#main #left p {
+    line-height: 25px;
+    font-size: 20px;
+    text-indent: 25px;
+}
+
+#main #left  ul li {
+    text-decoration: none;
+    line-height: 25px;
+    font-size: 18px;
+    list-style: none;
+    display: block;
+    border: none;
+}
+
+.mo_ta {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.img{
+    width: 100%;
+    height: 200px;
+    background-size:cover ;
+    background-position: center;
+    position: relative;
+}
+
+#main {
+  
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+#main #left {
+    width: 800px;
+    margin-left: 75px;
+    float: left;
+    background-color: rgba(153, 140, 140, 0.212);
+   
+}
+
+#main #left #img_content img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main #left img {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#main #left ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#main #left ul li {
+    list-style: none;
+    clear: left;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+
+
+
+#main #left ul li h2  {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+#main #left ul li h2 a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+#main #right {
+    width: 350px;
+    margin-right: 40px;
+    margin-top: 25px;
+    float: right;
+}
+
+#main #right .timkiem {
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+#main #right img {
+    margin-top: 40px;
+    width: 350px;
+    height: 2000px;
+}
+
+
+
+#main #right form button {
+    float: right;
+    color: red;
+}
+
+#main #right ul {
+    border: 1px solid #cccccc;
+    background-color: rgba(17, 9, 9, 0.068) ;
+}
+#main #right ul li {
+    display: block;
+    line-height: 32px;
+    border-bottom: 1px solid #cccccc; 
+    margin-left: 10px; 
+    
+}
+
+#main #right ul li:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+.tieude1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#fcmt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+#fcmt input{
+    width: 600px;
+    height: 100px;
+}
+.button1{
+    height: 40px;
+    width: 120px;
+    background-color: green;
+}
+ #fcmt ul{
+    list-style: none;;
+   
+}
