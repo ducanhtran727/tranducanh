@@ -17,27 +17,32 @@ let input = document.getElementById("input");
 //     location.href = "./login.html";
 //   }
 // });
+console.log(JSON.parse(localStorage.getItem("isloging")));
+let cmt = document.getElementById("fcmt");
+if (!JSON.parse(localStorage.getItem("isloging"))){
+  cmt.style.visibility="hidden";
 
-function myFunction1() {
-  let filter = input.value;
+}
+  function myFunction1() {
+    let filter = input.value;
 
-  for (let i = 0; i < li.length; i++) {
-    let a = li[i].getElementsByTagName("a")[0];
+    for (let i = 0; i < li.length; i++) {
+      let a = li[i].getElementsByTagName("a")[0];
 
-    let txtValue = a.innerText;
+      let txtValue = a.innerText;
 
-    if (change_alias(txtValue).indexOf(change_alias(filter)) > -1) {
-      li[i].style.display = "";
+      if (change_alias(txtValue).indexOf(change_alias(filter)) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+    if (!input.value) {
+      list_timkiem.style.display = "none";
     } else {
-      li[i].style.display = "none";
+      list_timkiem.style.display = "block";
     }
   }
-  if (!input.value) {
-    list_timkiem.style.display = "none";
-  } else {
-    list_timkiem.style.display = "block";
-  }
-}
 
 function change_alias(alias) {
   var str = alias;
@@ -71,88 +76,88 @@ function change_alias(alias) {
 let biglist = [
   {
     diadiem: "hạ long",
-    link: "./halong.html",
+    link: "./halong1.html",
   },
   {
     diadiem: "hà nội",
-    link: "hanoi.html",
+    link: "hanoi1.html",
   },
   {
     diadiem: "đà lạt",
-    link: "./hanoi.html",
+    link: "./hanoi1.html",
   },
   {
     diadiem: "sài gòn",
-    link: "saigon.html/",
+    link: "saigon1.html/",
   },
   {
     diadiem: "sapa",
-    link: "sapa.html",
+    link: "sapa1.html",
   },
   {
     diadiem: "nha trang",
-    link: "./nhatrang.html",
+    link: "./nhatrang1.html",
   },
   {
     diadiem: "mũi né",
-    link: "./tamdao.html",
+    link: "./tamdao1.html",
   },
   {
     diadiem: "thái lan",
-    link: "./thailan.html",
+    link: "./thailan1.html",
   },
   {
     diadiem: "tam đảo",
-    link: "./tamdao.html",
+    link: "./tamdao1.html",
   },
   {
     diadiem: "sầm sơn",
-    link: "./tamdao.html",
+    link: "./tamdao1.html",
   },
   {
     diadiem: "đà nẵng",
-    link: "danang.html",
+    link: "danang1.html",
   },
   {
     diadiem: "singapore",
-    link: "./singapore.html",
+    link: "./singapore1.html",
   },
   {
     diadiem: "malaysia",
-    link: "nhatban.html",
+    link: "nhatban1.html",
   },
   {
     diadiem: "nhật bản",
-    link: "./nhatban.html",
+    link: "./nhatban1.html",
   },
   {
     diadiem: "hà giang",
-    link: "./halong.html",
+    link: "./halong1.html",
   },
   {
     diadiem: "cửa lò",
-    link: "nhatrang.html",
+    link: "nhatrang1.html",
   },
   {
     diadiem: "huế",
-    link: "tamdao.html",
+    link: "hue1.html",
   },
   {
     diadiem: "trung quốc",
-    link: "hanquoc.html",
+    link: "hanquoc1.html",
   },
   {
     diadiem: "campuchia",
-    link: "./hanquoc.html",
+    link: "./hanquoc1.html",
   },
 
   {
     diadiem: "london",
-    link: "./london.html",
+    link: "./london1.html",
   },
   {
     diadiem: "paris",
-    link: "./paris.html",
+    link: "./paris1.html",
   },
 ];
 
@@ -178,11 +183,12 @@ fcmt.addEventListener("submit", onSubmitevent);
 function onSubmitevent(event) {
   event.preventDefault();
   let todocontent = fcmt.addcmt.value;
-  let a = JSON.parse(localStorage.getItem("islogging"));
+  let a = JSON.parse(localStorage.getItem("isloging"));
   let li = document.createElement("li");
-  li.innerHTML = `<h3 style="color:red;">${a}:</h3> ${todocontent} <span id="del" onclick="" type="submit" class="material-icons">
+  let d = new Date();
+  li.innerHTML = `<h3 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">${a}:</h3>${todocontent} <span id="del" onclick="" type="submit" style="color:red;" class="material-icons"> 
 close
-</span>`;
+</span><p style="font-size:13px; color:#fff;">${d}</p>`;
   ul.appendChild(li);
 
   fcmt.addcmt.value = "";
