@@ -524,13 +524,21 @@ body{
 #fcmt input{
     width: 600px;
     height: 100px;
+    border: 3px  dotted blue;
 }
 .button1{
     height: 40px;
     width: 120px;
     background-color: green;
+    font-weight: bold;
+    color: blue;
 }
  #fcmt ul{
-    list-style: none;;
+    list-style: none;  
    
+}
+#fcmt label{
+    font-weight:bold;
+    color: blue;
+
 }
